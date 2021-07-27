@@ -7,15 +7,19 @@
 <body>
 <form action="" method="post">
     <div class="row">
+	<h1 class = "auth">Авторизация</h1>
         <label for="login">Ваш логин:</label>
         <input type="email" name="usermail" placeholder="yourname@email.com" required />
 	</div>
     <div class="row">
         <label for="password">Ваш пароль:</label>
         <input type="password" pattern = "[0-9a-zA-Z]{6,32}" name="password" placeholder="password" required />
+		<div class="instruction" id="password-instruction">В пароле вы можете использовать только символы латинского алфавита, цифры. <br />Пароль должен быть не короче 6 символов.</div>
     </div>
     <div class="row">
+	<div class="btn-submit">
         <input type="submit" name="submit" id="btn-submit" value="Войти" />
+	</div>	
     </div>
 </form>
 </body>
